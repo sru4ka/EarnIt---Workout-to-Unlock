@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarnIt - Workout to Unlock Your Screen Time</title>
+    <meta name="description" content="EarnIt transforms screen time into fitness motivation. Complete workouts to unlock your favorite apps. AI-powered pose detection, family management, and streak tracking.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💪</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">E</div>
+                <span>EarnIt</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#ai-tracking">AI Tracking</a>
+                <a href="#family">Family</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <a href="#download" class="nav-cta">Download Free</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-effects">
+            <div class="hero-gradient-orb orb-1"></div>
+            <div class="hero-gradient-orb orb-2"></div>
+            <div class="hero-gradient-orb orb-3"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Now available on the App Store
+                </div>
+                <h1 class="hero-title">
+                    Earn Your
+                    <span class="gradient-text">Screen Time.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Lock your most distracting apps behind real workouts. Complete exercises, unlock your phone. Build fitness habits while crushing screen addiction.
+                </p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+                        Download for iOS
+                    </a>
+                    <a href="#how-it-works" class="btn btn-ghost btn-lg">
+                        See How It Works
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number" data-count="50000">0</span>
+                        <span class="hero-stat-label">Active Users</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number" data-count="2500000">0</span>
+                        <span class="hero-stat-label">Workouts Done</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">4.9</span>
+                        <span class="hero-stat-label">App Store Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <!-- Dashboard Screen -->
+                            <div class="screen-content">
+                                <div class="screen-header">
+                                    <span class="screen-greeting">Good Morning!</span>
+                                    <span class="screen-icon">⚙️</span>
+                                </div>
+                                <div class="screen-streak-card">
+                                    <div class="screen-streak-flame">🔥</div>
+                                    <div class="screen-streak-number">14</div>
+                                    <div class="screen-streak-label">Day Streak</div>
+                                    <div class="screen-streak-stats">
+                                        <div><strong>14</strong> longest</div>
+                                        <div><strong>47</strong> total</div>
+                                    </div>
+                                </div>
+                                <div class="screen-status-card done">
+                                    <span class="screen-check">✓</span>
+                                    <span>Today's workout complete!</span>
+                                </div>
+                                <div class="screen-section-title">Locked Apps</div>
+                                <div class="screen-apps">
+                                    <div class="screen-app unlocked">
+                                        <div class="screen-app-icon tiktok">T</div>
+                                        <span>TikTok</span>
+                                        <span class="screen-app-status open">Open</span>
+                                    </div>
+                                    <div class="screen-app unlocked">
+                                        <div class="screen-app-icon instagram">I</div>
+                                        <span>Instagram</span>
+                                        <span class="screen-app-status open">Open</span>
+                                    </div>
+                                    <div class="screen-app locked">
+                                        <div class="screen-app-icon youtube">Y</div>
+                                        <span>YouTube</span>
+                                        <span class="screen-app-status lock">🔒</span>
+                                    </div>
+                                </div>
+                                <div class="screen-week">
+                                    <div class="screen-day done">M</div>
+                                    <div class="screen-day done">T</div>
+                                    <div class="screen-day done">W</div>
+                                    <div class="screen-day done">T</div>
+                                    <div class="screen-day done">F</div>
+                                    <div class="screen-day current">S</div>
+                                    <div class="screen-day">S</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Logos / Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <p class="social-proof-text">Trusted by parents and fitness enthusiasts worldwide</p>
+            <div class="social-proof-items">
+                <div class="proof-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                    <span>App Store Featured</span>
+                </div>
+                <div class="proof-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <span>50,000+ 5-Star Reviews</span>
+                </div>
+                <div class="proof-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    <span>Health & Fitness #1</span>
+                </div>
+                <div class="proof-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                    <span>Family Approved</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">Everything you need to<br><span class="gradient-text">break the scroll habit.</span></h2>
+                <p class="section-subtitle">EarnIt combines powerful app locking with real workouts, AI tracking, and family management to transform your relationship with your phone.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card feature-card-large">
+                    <div class="feature-card-icon blue">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    </div>
+                    <h3>Smart App Locking</h3>
+                    <p>Lock TikTok, Instagram, YouTube, and any distracting app behind workouts. Three lock modes: Mindful (gentle pause), Standard (full lock), and Strict (PIN-protected).</p>
+                    <div class="feature-visual app-lock-visual">
+                        <div class="lock-demo">
+                            <div class="lock-app-row">
+                                <div class="lock-app-pill locked">
+                                    <span>🔒</span> TikTok
+                                </div>
+                                <div class="lock-app-pill locked">
+                                    <span>🔒</span> Instagram
+                                </div>
+                                <div class="lock-app-pill unlocked">
+                                    <span>✅</span> YouTube
+                                </div>
+                            </div>
+                            <div class="lock-app-row">
+                                <div class="lock-app-pill locked">
+                                    <span>🔒</span> Snapchat
+                                </div>
+                                <div class="lock-app-pill unlocked">
+                                    <span>✅</span> Reddit
+                                </div>
+                                <div class="lock-app-pill locked">
+                                    <span>🔒</span> X
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon green">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <h3>Streak Tracking</h3>
+                    <p>Build unbreakable workout streaks. Track your current streak, longest streak, and total workouts with beautiful milestone celebrations.</p>
+                    <div class="feature-mini-visual">
+                        <div class="streak-display">
+                            <span class="streak-fire">🔥</span>
+                            <span class="streak-num">14</span>
+                            <span class="streak-text">days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon orange">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h3>Custom Workouts</h3>
+                    <p>Build personalized routines with rep-based and timed exercises. Choose which apps unlock when you finish each workout.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon purple">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Three Lock Modes</h3>
+                    <p><strong>Mindful:</strong> Gentle 10-second pause. <strong>Standard:</strong> Full lock until workout. <strong>Strict:</strong> PIN-protected accountability.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon red">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>Unlock Timers</h3>
+                    <p>Set how long apps stay unlocked: 30 minutes, 1 hour, 2 hours, or the rest of the day. You control the reward.</p>
+                </div>
+
+                <div class="feature-card feature-card-large">
+                    <div class="feature-card-icon teal">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                    </div>
+                    <h3>Progress Dashboard</h3>
+                    <p>Track everything: total reps, sets, calories burned, and screen time reduced. Beautiful weekly charts and workout history keep you motivated.</p>
+                    <div class="feature-visual stats-visual">
+                        <div class="stats-grid-demo">
+                            <div class="stat-box">
+                                <div class="stat-val">1,247</div>
+                                <div class="stat-lbl">Total Reps</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-val">186</div>
+                                <div class="stat-lbl">Sets Done</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-val">4.2k</div>
+                                <div class="stat-lbl">Calories</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-val">23h</div>
+                                <div class="stat-lbl">Screen Time Saved</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Three steps to<br><span class="gradient-text">freedom from your phone.</span></h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-visual">
+                        <div class="step-phone">
+                            <div class="step-screen">
+                                <div class="lock-screen-demo">
+                                    <div class="lock-icon-big">🔒</div>
+                                    <div class="lock-title">TikTok is Locked</div>
+                                    <div class="lock-subtitle">Complete a workout to unlock</div>
+                                    <div class="lock-btn">Start Workout →</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Lock Your Apps</h3>
+                    <p>Choose which apps to lock and pick your lock mode. Set it once and EarnIt handles the rest.</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="80" height="24" viewBox="0 0 80 24"><path d="M0 12h72M64 4l8 8-8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-visual">
+                        <div class="step-phone">
+                            <div class="step-screen">
+                                <div class="workout-screen-demo">
+                                    <div class="workout-exercise">Push-ups</div>
+                                    <div class="workout-reps">8 / 12 reps</div>
+                                    <div class="workout-progress-bar">
+                                        <div class="workout-progress-fill" style="width: 66%"></div>
+                                    </div>
+                                    <div class="workout-set-info">Set 2 of 3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Complete a Workout</h3>
+                    <p>Do your personalized workout. Use AI camera tracking or manual mode. Quick 5-minute routines to full sessions.</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="80" height="24" viewBox="0 0 80 24"><path d="M0 12h72M64 4l8 8-8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-visual">
+                        <div class="step-phone">
+                            <div class="step-screen">
+                                <div class="unlock-screen-demo">
+                                    <div class="unlock-check">✓</div>
+                                    <div class="unlock-title">Apps Unlocked!</div>
+                                    <div class="unlock-apps">
+                                        <span>TikTok</span>
+                                        <span>Instagram</span>
+                                    </div>
+                                    <div class="unlock-timer">2 hours remaining</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Enjoy Your Reward</h3>
+                    <p>Your locked apps unlock for a set duration. You earned it. Build your streak and stay consistent.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Camera Section -->
+    <section class="ai-section" id="ai-tracking">
+        <div class="container">
+            <div class="ai-grid">
+                <div class="ai-content">
+                    <span class="section-tag">AI-Powered</span>
+                    <h2 class="section-title">Your phone counts<br><span class="gradient-text">every single rep.</span></h2>
+                    <p class="ai-description">
+                        EarnIt uses advanced machine learning pose detection to automatically count your reps and track your form in real-time. Just prop up your phone and start moving.
+                    </p>
+                    <div class="ai-features">
+                        <div class="ai-feature">
+                            <div class="ai-feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h4>Real-Time Pose Detection</h4>
+                                <p>ML-powered body tracking detects your movements and counts reps automatically.</p>
+                            </div>
+                        </div>
+                        <div class="ai-feature">
+                            <div class="ai-feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div>
+                                <h4>Form Feedback</h4>
+                                <p>Get real-time feedback on your form quality and positioning tips.</p>
+                            </div>
+                        </div>
+                        <div class="ai-feature">
+                            <div class="ai-feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            </div>
+                            <div>
+                                <h4>Auto-Completion</h4>
+                                <p>Workouts auto-complete when you hit your target. No tapping needed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-visual">
+                    <div class="ai-phone">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <div class="phone-screen ai-screen">
+                                <div class="camera-demo">
+                                    <div class="camera-bg"></div>
+                                    <div class="camera-overlay">
+                                        <div class="camera-status tracking">● Tracking</div>
+                                        <div class="camera-exercise">Push-ups</div>
+                                        <div class="pose-skeleton">
+                                            <div class="pose-joint head"></div>
+                                            <div class="pose-joint shoulder-l"></div>
+                                            <div class="pose-joint shoulder-r"></div>
+                                            <div class="pose-joint elbow-l"></div>
+                                            <div class="pose-joint elbow-r"></div>
+                                            <div class="pose-joint hip-l"></div>
+                                            <div class="pose-joint hip-r"></div>
+                                            <div class="pose-bone bone-1"></div>
+                                            <div class="pose-bone bone-2"></div>
+                                            <div class="pose-bone bone-3"></div>
+                                            <div class="pose-bone bone-4"></div>
+                                            <div class="pose-bone bone-5"></div>
+                                        </div>
+                                        <div class="camera-counter">
+                                            <div class="counter-number">8</div>
+                                            <div class="counter-label">of 12 reps</div>
+                                        </div>
+                                        <div class="camera-form">Great form! 💪</div>
+                                        <div class="camera-confidence">
+                                            <div class="confidence-bar">
+                                                <div class="confidence-fill" style="width: 92%"></div>
+                                            </div>
+                                            <span>92% confidence</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-glow green-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Section -->
+    <section class="family-section" id="family">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Family Mode</span>
+                <h2 class="section-title">Get the whole family<br><span class="gradient-text">moving together.</span></h2>
+                <p class="section-subtitle">Parents love EarnIt. Monitor your kids' screen time, assign workouts, and sync across up to 5 devices with iCloud.</p>
+            </div>
+            <div class="family-grid">
+                <div class="family-card">
+                    <div class="family-card-header">
+                        <h3>Family Dashboard</h3>
+                    </div>
+                    <div class="family-demo">
+                        <div class="family-overview">
+                            <div class="family-stat-row">
+                                <span>This Week</span>
+                                <strong>24 workouts</strong>
+                            </div>
+                            <div class="family-stat-row">
+                                <span>Screen Time Saved</span>
+                                <strong>8.5 hours</strong>
+                            </div>
+                            <div class="family-stat-row">
+                                <span>Locked Apps</span>
+                                <strong>12 apps</strong>
+                            </div>
+                        </div>
+                        <div class="family-members-demo">
+                            <div class="family-member">
+                                <div class="member-avatar" style="background: linear-gradient(135deg, #2563EB, #7C3AED)">S</div>
+                                <div class="member-info">
+                                    <div class="member-name">Sarah <span class="member-badge active">Active</span></div>
+                                    <div class="member-stats">7 workouts  ·  2.1h screen time</div>
+                                </div>
+                            </div>
+                            <div class="family-member">
+                                <div class="member-avatar" style="background: linear-gradient(135deg, #10B981, #059669)">J</div>
+                                <div class="member-info">
+                                    <div class="member-name">Jake <span class="member-badge active">Active</span></div>
+                                    <div class="member-stats">5 workouts  ·  1.8h screen time</div>
+                                </div>
+                            </div>
+                            <div class="family-member">
+                                <div class="member-avatar" style="background: linear-gradient(135deg, #F59E0B, #D97706)">E</div>
+                                <div class="member-info">
+                                    <div class="member-name">Emma <span class="member-badge">Inactive</span></div>
+                                    <div class="member-stats">3 workouts  ·  3.2h screen time</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="family-features">
+                    <div class="family-feature-card">
+                        <div class="ff-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h4>Up to 5 Devices</h4>
+                        <p>Sync seamlessly across the whole family's devices with iCloud.</p>
+                    </div>
+                    <div class="family-feature-card">
+                        <div class="ff-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                        </div>
+                        <h4>Assign Workouts</h4>
+                        <p>Create age-appropriate workouts and assign them to each child.</p>
+                    </div>
+                    <div class="family-feature-card">
+                        <div class="ff-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                        </div>
+                        <h4>Activity Tracking</h4>
+                        <p>See each family member's workout history, streaks, and screen time.</p>
+                    </div>
+                    <div class="family-feature-card">
+                        <div class="ff-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h4>Parental Controls</h4>
+                        <p>Strict mode with PIN protection ensures kids can't bypass their locks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Reviews</span>
+                <h2 class="section-title">People are<br><span class="gradient-text">loving EarnIt.</span></h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"My screen time dropped 40% in the first week. Now I actually look forward to working out because I know I'll get my TikTok time after."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #2563EB, #7C3AED)">A</div>
+                        <div>
+                            <strong>Alex M.</strong>
+                            <span>College Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card featured">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Best parenting tool I've found. My kids now exercise daily without being asked. The family dashboard lets me see their progress and they love building streaks."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #10B981, #059669)">R</div>
+                        <div>
+                            <strong>Rachel K.</strong>
+                            <span>Mom of 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"The AI camera tracking is insane. It counts my push-ups perfectly and even tells me when my form is off. Feels like having a personal trainer."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #F59E0B, #EF4444)">M</div>
+                        <div>
+                            <strong>Marcus T.</strong>
+                            <span>Fitness Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">Start free.<br><span class="gradient-text">Upgrade when ready.</span></h2>
+                <p class="section-subtitle">EarnIt is free to download with powerful features. Go Pro for unlimited app locks and AI tracking.</p>
+            </div>
+            <div class="pricing-toggle">
+                <span class="toggle-label active" id="monthlyLabel">Monthly</span>
+                <button class="toggle-switch" id="pricingToggle" aria-label="Toggle annual pricing">
+                    <div class="toggle-knob"></div>
+                </button>
+                <span class="toggle-label" id="annualLabel">Annual <span class="save-badge">Save 50%</span></span>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3>Free</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">$0</span>
+                            <span class="price-period">forever</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Lock 1 app</li>
+                        <li><span class="check">✓</span> Custom workouts</li>
+                        <li><span class="check">✓</span> Streak tracking</li>
+                        <li><span class="check">✓</span> Manual rep counting</li>
+                        <li><span class="check">✓</span> Progress dashboard</li>
+                        <li class="disabled"><span class="x">✕</span> AI camera tracking</li>
+                        <li class="disabled"><span class="x">✕</span> Unlimited app locks</li>
+                        <li class="disabled"><span class="x">✕</span> Family management</li>
+                    </ul>
+                    <a href="#download" class="btn btn-secondary btn-full">Get Started Free</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-card-header">
+                        <h3>Pro</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount" data-monthly="$4.99" data-annual="$29.99">$4.99</span>
+                            <span class="price-period" data-monthly="/month" data-annual="/year">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> <strong>Unlimited</strong> app locks</li>
+                        <li><span class="check">✓</span> AI camera tracking</li>
+                        <li><span class="check">✓</span> Custom workouts</li>
+                        <li><span class="check">✓</span> Streak tracking</li>
+                        <li><span class="check">✓</span> Custom app creation</li>
+                        <li><span class="check">✓</span> Advanced statistics</li>
+                        <li><span class="check">✓</span> Progress dashboard</li>
+                        <li class="disabled"><span class="x">✕</span> Family management</li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary btn-full">Start 7-Day Free Trial</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3>Family</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount" data-monthly="$9.99" data-annual="$59.99">$9.99</span>
+                            <span class="price-period" data-monthly="/month" data-annual="/year">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Everything in Pro</li>
+                        <li><span class="check">✓</span> Up to <strong>5 devices</strong></li>
+                        <li><span class="check">✓</span> Family dashboard</li>
+                        <li><span class="check">✓</span> Parental controls</li>
+                        <li><span class="check">✓</span> Assign workouts per child</li>
+                        <li><span class="check">✓</span> Activity monitoring</li>
+                        <li><span class="check">✓</span> iCloud sync</li>
+                        <li><span class="check">✓</span> Cross-device tracking</li>
+                    </ul>
+                    <a href="#download" class="btn btn-secondary btn-full">Start 7-Day Free Trial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section class="download-cta" id="download">
+        <div class="download-bg-effects">
+            <div class="download-orb orb-1"></div>
+            <div class="download-orb orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="download-content">
+                <h2 class="download-title">Ready to earn your<br><span class="gradient-text">screen time?</span></h2>
+                <p class="download-subtitle">Join 50,000+ people building healthier habits. Download EarnIt free today.</p>
+                <div class="download-actions">
+                    <a href="#" class="app-store-btn">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                        <div>
+                            <small>Download on the</small>
+                            <strong>App Store</strong>
+                        </div>
+                    </a>
+                </div>
+                <p class="download-note">Free to download  ·  No credit card required  ·  7-day Pro trial</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <div class="logo-icon">E</div>
+                        <span>EarnIt</span>
+                    </a>
+                    <p>Workout to unlock. Build fitness habits while breaking screen addiction.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#download">Download</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="https://earnit.app/privacy">Privacy Policy</a>
+                    <a href="https://earnit.app/terms">Terms of Service</a>
+                    <a href="#">Support</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EarnIt. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.56a8.22 8.22 0 0 0 4.78 1.52V6.73a4.83 4.83 0 0 1-1.02-.04z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

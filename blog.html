@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - EarnIt</title>
+    <meta name="description" content="Read the latest from EarnIt - fitness tips, product updates, and stories from our community.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="app-icon.png">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--gray-900) 0%, #1a1a2e 100%);
+            padding: 140px 0 80px;
+            text-align: center;
+            color: white;
+        }
+        .page-header h1 { font-size: 48px; font-weight: 800; margin-bottom: 16px; }
+        .page-header p { font-size: 18px; color: var(--gray-400); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+        .page-content { padding: 80px 0; }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .blog-card {
+            background: var(--card-bg);
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: transform var(--transition), box-shadow var(--transition);
+        }
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+        .blog-card-image {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+        }
+        .blog-card-body { padding: 24px; }
+        .blog-card-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .blog-card-body h3 { font-size: 18px; font-weight: 700; color: var(--gray-900); margin-bottom: 12px; line-height: 1.4; }
+        .blog-card-body p { font-size: 14px; color: var(--gray-500); line-height: 1.7; margin-bottom: 16px; }
+        .blog-card-meta { font-size: 13px; color: var(--gray-400); }
+        .blog-coming-soon {
+            text-align: center;
+            padding: 48px;
+            color: var(--gray-500);
+            font-size: 16px;
+        }
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 32px; }
+            .blog-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav" id="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="app-icon.png" alt="EarnIt" class="logo-icon-img">
+                <span>EarnIt</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="index.html#ai-tracking">AI Tracking</a>
+                <a href="index.html#family">Family</a>
+                <a href="index.html#pricing">Pricing</a>
+            </div>
+            <a href="index.html#download" class="nav-cta">Download Free</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Blog</h1>
+            <p>Fitness tips, product updates, and stories from the EarnIt community.</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-card-image" style="background: linear-gradient(135deg, #dbeafe, #bfdbfe);">&#x1F3CB;</div>
+                    <div class="blog-card-body">
+                        <span class="blog-card-tag" style="background: rgba(37,99,235,0.1); color: var(--blue);">Fitness</span>
+                        <h3>5 Quick Workouts You Can Do Before Unlocking Instagram</h3>
+                        <p>Short on time? These 5-minute workout routines will get your blood pumping and earn you your screen time.</p>
+                        <span class="blog-card-meta">Coming Soon</span>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-image" style="background: linear-gradient(135deg, #d1fae5, #a7f3d0);">&#x1F4F1;</div>
+                    <div class="blog-card-body">
+                        <span class="blog-card-tag" style="background: rgba(16,185,129,0.1); color: var(--green);">Product</span>
+                        <h3>Introducing AI-Powered Pose Detection</h3>
+                        <p>Our new ML-powered camera tracking counts your reps automatically with real-time form feedback.</p>
+                        <span class="blog-card-meta">Coming Soon</span>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-image" style="background: linear-gradient(135deg, #ede9fe, #ddd6fe);">&#x1F46A;</div>
+                    <div class="blog-card-body">
+                        <span class="blog-card-tag" style="background: rgba(124,58,237,0.1); color: var(--purple);">Family</span>
+                        <h3>How Families Are Using EarnIt to Stay Active Together</h3>
+                        <p>Real stories from families who have transformed their screen time habits with EarnIt's family mode.</p>
+                        <span class="blog-card-meta">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-coming-soon">
+                <p style="margin-top: 48px;">More articles coming soon. Stay tuned!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <img src="app-icon.png" alt="EarnIt" class="logo-icon-img">
+                        <span>EarnIt</span>
+                    </a>
+                    <p>Workout to unlock. Build fitness habits while breaking screen addiction.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="index.html#features">Features</a>
+                    <a href="index.html#how-it-works">How It Works</a>
+                    <a href="index.html#pricing">Pricing</a>
+                    <a href="index.html#download">Download</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="press.html">Press</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="support.html">Support</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EarnIt. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                    <a href="#" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.56a8.22 8.22 0 0 0 4.78 1.52V6.73a4.83 4.83 0 0 1-1.02-.04z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

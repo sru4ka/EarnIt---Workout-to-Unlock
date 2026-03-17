@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - EarnIt</title>
+    <meta name="description" content="Join the EarnIt team and help us transform the relationship between fitness and screen time.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="app-icon.png">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--gray-900) 0%, #1a1a2e 100%);
+            padding: 140px 0 80px;
+            text-align: center;
+            color: white;
+        }
+        .page-header h1 { font-size: 48px; font-weight: 800; margin-bottom: 16px; }
+        .page-header p { font-size: 18px; color: var(--gray-400); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+        .page-content { padding: 80px 0; }
+        .content-section { max-width: 800px; margin: 0 auto 64px; }
+        .content-section h2 { font-size: 32px; font-weight: 700; color: var(--gray-900); margin-bottom: 24px; }
+        .content-section p { font-size: 17px; color: var(--gray-600); line-height: 1.8; margin-bottom: 16px; }
+        .perks-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-top: 32px;
+        }
+        .perk-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 24px;
+            background: var(--card-bg);
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-md);
+        }
+        .perk-item .perk-icon { font-size: 24px; flex-shrink: 0; }
+        .perk-item h4 { font-size: 15px; font-weight: 600; color: var(--gray-900); margin-bottom: 6px; }
+        .perk-item p { font-size: 14px; color: var(--gray-500); line-height: 1.6; margin: 0; }
+        .no-openings {
+            text-align: center;
+            padding: 64px 32px;
+            background: var(--gray-50);
+            border-radius: var(--radius-lg);
+            margin-top: 32px;
+        }
+        .no-openings h3 { font-size: 20px; font-weight: 700; color: var(--gray-900); margin-bottom: 12px; }
+        .no-openings p { font-size: 15px; color: var(--gray-500); margin-bottom: 24px; }
+        .no-openings a {
+            display: inline-block;
+            padding: 12px 32px;
+            background: var(--blue);
+            color: white;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background var(--transition);
+        }
+        .no-openings a:hover { background: var(--blue-dark); }
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 32px; }
+            .perks-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav" id="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="app-icon.png" alt="EarnIt" class="logo-icon-img">
+                <span>EarnIt</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="index.html#ai-tracking">AI Tracking</a>
+                <a href="index.html#family">Family</a>
+                <a href="index.html#pricing">Pricing</a>
+            </div>
+            <a href="index.html#download" class="nav-cta">Download Free</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Careers</h1>
+            <p>Join us in building the future of fitness motivation. We're looking for passionate people who want to make a difference.</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="content-section">
+                <h2>Why Work at EarnIt?</h2>
+                <p>At EarnIt, we're building technology that genuinely improves people's lives. Our team is passionate about fitness, technology, and creating products that help people build healthier habits.</p>
+
+                <div class="perks-grid">
+                    <div class="perk-item">
+                        <span class="perk-icon">&#x1F3E0;</span>
+                        <div>
+                            <h4>Remote First</h4>
+                            <p>Work from anywhere in the world. We believe great work happens when you have flexibility.</p>
+                        </div>
+                    </div>
+                    <div class="perk-item">
+                        <span class="perk-icon">&#x1F4AA;</span>
+                        <div>
+                            <h4>Fitness Stipend</h4>
+                            <p>Monthly wellness budget for gym memberships, equipment, or fitness classes.</p>
+                        </div>
+                    </div>
+                    <div class="perk-item">
+                        <span class="perk-icon">&#x1F4DA;</span>
+                        <div>
+                            <h4>Learning Budget</h4>
+                            <p>Annual budget for courses, conferences, and professional development.</p>
+                        </div>
+                    </div>
+                    <div class="perk-item">
+                        <span class="perk-icon">&#x1F334;</span>
+                        <div>
+                            <h4>Unlimited PTO</h4>
+                            <p>Take the time you need to recharge. We trust our team to manage their time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Open Positions</h2>
+                <div class="no-openings">
+                    <h3>No Open Positions Right Now</h3>
+                    <p>We don't have any open roles at the moment, but we're always interested in hearing from talented people. Send us your resume and we'll keep you in mind for future opportunities.</p>
+                    <a href="mailto:dbromberg1@gmail.com">Send Your Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <img src="app-icon.png" alt="EarnIt" class="logo-icon-img">
+                        <span>EarnIt</span>
+                    </a>
+                    <p>Workout to unlock. Build fitness habits while breaking screen addiction.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="index.html#features">Features</a>
+                    <a href="index.html#how-it-works">How It Works</a>
+                    <a href="index.html#pricing">Pricing</a>
+                    <a href="index.html#download">Download</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="press.html">Press</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="support.html">Support</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EarnIt. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                    <a href="#" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.56a8.22 8.22 0 0 0 4.78 1.52V6.73a4.83 4.83 0 0 1-1.02-.04z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

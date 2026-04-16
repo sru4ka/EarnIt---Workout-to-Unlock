@@ -227,4 +227,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- Exercise Video Play on Hover ---
+    document.querySelectorAll('.exercise-card').forEach(card => {
+        const video = card.querySelector('.exercise-video');
+        if (!video) return;
+
+        card.addEventListener('mouseenter', () => {
+            video.play().catch(() => {});
+        });
+
+        card.addEventListener('mouseleave', () => {
+            video.pause();
+            video.currentTime = 0;
+        });
+
+        // Touch: tap to toggle play
+        card.addEventListener('click', () => {
+            if (video.paused) {
+                video.play().catch(() => {});
+            } else {
+                video.pause();
+                video.currentTime = 0;
+            }
+        });
+    });
+
 });

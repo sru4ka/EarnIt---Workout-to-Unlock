@@ -23,6 +23,7 @@
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
                 <a href="#ai-tracking">AI Tracking</a>
+                <a href="#exercises">Exercises</a>
                 <a href="#family">Family</a>
                 <a href="#pricing">Pricing</a>
             </div>
@@ -88,53 +89,9 @@
                     <div class="phone-frame">
                         <div class="phone-notch"></div>
                         <div class="phone-screen">
-                            <!-- Dashboard Screen -->
-                            <div class="screen-content">
-                                <div class="screen-header">
-                                    <span class="screen-greeting">Good Morning!</span>
-                                    <span class="screen-icon">⚙️</span>
-                                </div>
-                                <div class="screen-streak-card">
-                                    <div class="screen-streak-flame">🔥</div>
-                                    <div class="screen-streak-number">14</div>
-                                    <div class="screen-streak-label">Day Streak</div>
-                                    <div class="screen-streak-stats">
-                                        <div><strong>14</strong> longest</div>
-                                        <div><strong>47</strong> total</div>
-                                    </div>
-                                </div>
-                                <div class="screen-status-card done">
-                                    <span class="screen-check">✓</span>
-                                    <span>Today's workout complete!</span>
-                                </div>
-                                <div class="screen-section-title">Locked Apps</div>
-                                <div class="screen-apps">
-                                    <div class="screen-app unlocked">
-                                        <div class="screen-app-icon tiktok">T</div>
-                                        <span>TikTok</span>
-                                        <span class="screen-app-status open">Open</span>
-                                    </div>
-                                    <div class="screen-app unlocked">
-                                        <div class="screen-app-icon instagram">I</div>
-                                        <span>Instagram</span>
-                                        <span class="screen-app-status open">Open</span>
-                                    </div>
-                                    <div class="screen-app locked">
-                                        <div class="screen-app-icon youtube">Y</div>
-                                        <span>YouTube</span>
-                                        <span class="screen-app-status lock">🔒</span>
-                                    </div>
-                                </div>
-                                <div class="screen-week">
-                                    <div class="screen-day done">M</div>
-                                    <div class="screen-day done">T</div>
-                                    <div class="screen-day done">W</div>
-                                    <div class="screen-day done">T</div>
-                                    <div class="screen-day done">F</div>
-                                    <div class="screen-day current">S</div>
-                                    <div class="screen-day">S</div>
-                                </div>
-                            </div>
+                            <video class="phone-video" autoplay muted loop playsinline>
+                                <source src="videos/onboarding-demo.mp4" type="video/mp4">
+                            </video>
                         </div>
                     </div>
                     <div class="phone-glow"></div>
@@ -298,12 +255,9 @@
                     <div class="step-visual">
                         <div class="step-phone">
                             <div class="step-screen">
-                                <div class="lock-screen-demo">
-                                    <div class="lock-icon-big">🔒</div>
-                                    <div class="lock-title">TikTok is Locked</div>
-                                    <div class="lock-subtitle">Complete a workout to unlock</div>
-                                    <div class="lock-btn">Start Workout →</div>
-                                </div>
+                                <video class="step-video" autoplay muted loop playsinline>
+                                    <source src="videos/block-apps.mp4" type="video/mp4">
+                                </video>
                             </div>
                         </div>
                     </div>
@@ -404,42 +358,125 @@
                         <div class="phone-frame">
                             <div class="phone-notch"></div>
                             <div class="phone-screen ai-screen">
-                                <div class="camera-demo">
-                                    <div class="camera-bg"></div>
-                                    <div class="camera-overlay">
-                                        <div class="camera-status tracking">● Tracking</div>
-                                        <div class="camera-exercise">Push-ups</div>
-                                        <div class="pose-skeleton">
-                                            <div class="pose-joint head"></div>
-                                            <div class="pose-joint shoulder-l"></div>
-                                            <div class="pose-joint shoulder-r"></div>
-                                            <div class="pose-joint elbow-l"></div>
-                                            <div class="pose-joint elbow-r"></div>
-                                            <div class="pose-joint hip-l"></div>
-                                            <div class="pose-joint hip-r"></div>
-                                            <div class="pose-bone bone-1"></div>
-                                            <div class="pose-bone bone-2"></div>
-                                            <div class="pose-bone bone-3"></div>
-                                            <div class="pose-bone bone-4"></div>
-                                            <div class="pose-bone bone-5"></div>
-                                        </div>
-                                        <div class="camera-counter">
-                                            <div class="counter-number">8</div>
-                                            <div class="counter-label">of 12 reps</div>
-                                        </div>
-                                        <div class="camera-form">Great form! 💪</div>
-                                        <div class="camera-confidence">
-                                            <div class="confidence-bar">
-                                                <div class="confidence-fill" style="width: 92%"></div>
-                                            </div>
-                                            <span>92% confidence</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                <video class="phone-video" autoplay muted loop playsinline>
+                                    <source src="videos/pushups.mp4" type="video/mp4">
+                                </video>
                             </div>
                         </div>
                         <div class="phone-glow green-glow"></div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercises Section -->
+    <section class="exercises-section" id="exercises">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Exercises</span>
+                <h2 class="section-title">Real workouts.<br><span class="gradient-text">Proper form guides.</span></h2>
+                <p class="section-subtitle">EarnIt includes built-in how-to videos for every exercise. Learn proper form, then let the AI track your reps.</p>
+            </div>
+            <div class="exercises-grid">
+                <div class="exercise-card">
+                    <div class="exercise-video-wrapper">
+                        <video class="exercise-video" muted loop playsinline preload="metadata">
+                            <source src="videos/pushups.mp4" type="video/mp4">
+                        </video>
+                        <div class="exercise-play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                    </div>
+                    <h4>Push-ups</h4>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-video-wrapper">
+                        <video class="exercise-video" muted loop playsinline preload="metadata">
+                            <source src="videos/squats.mp4" type="video/mp4">
+                        </video>
+                        <div class="exercise-play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                    </div>
+                    <h4>Squats</h4>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-video-wrapper">
+                        <video class="exercise-video" muted loop playsinline preload="metadata">
+                            <source src="videos/jumping-jacks.mp4" type="video/mp4">
+                        </video>
+                        <div class="exercise-play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                    </div>
+                    <h4>Jumping Jacks</h4>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-video-wrapper">
+                        <video class="exercise-video" muted loop playsinline preload="metadata">
+                            <source src="videos/lunges.mp4" type="video/mp4">
+                        </video>
+                        <div class="exercise-play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                    </div>
+                    <h4>Lunges</h4>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-video-wrapper">
+                        <video class="exercise-video" muted loop playsinline preload="metadata">
+                            <source src="videos/crunches.mp4" type="video/mp4">
+                        </video>
+                        <div class="exercise-play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                    </div>
+                    <h4>Crunches</h4>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-video-wrapper">
+                        <video class="exercise-video" muted loop playsinline preload="metadata">
+                            <source src="videos/high-knees.mp4" type="video/mp4">
+                        </video>
+                        <div class="exercise-play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                    </div>
+                    <h4>High Knees</h4>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-video-wrapper">
+                        <video class="exercise-video" muted loop playsinline preload="metadata">
+                            <source src="videos/plank.mp4" type="video/mp4">
+                        </video>
+                        <div class="exercise-play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                    </div>
+                    <h4>Plank</h4>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-video-wrapper">
+                        <video class="exercise-video" muted loop playsinline preload="metadata">
+                            <source src="videos/situps.mp4" type="video/mp4">
+                        </video>
+                        <div class="exercise-play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                    </div>
+                    <h4>Sit-ups</h4>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-video-wrapper">
+                        <video class="exercise-video" muted loop playsinline preload="metadata">
+                            <source src="videos/mountain-climber.mp4" type="video/mp4">
+                        </video>
+                        <div class="exercise-play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                    </div>
+                    <h4>Mountain Climbers</h4>
                 </div>
             </div>
         </div>

@@ -2096,4 +2096,117 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
         width: 240px;
         height: 500px;
     }
+
+    .exercises-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* --- Video Styles --- */
+.phone-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.step-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 22px;
+}
+
+/* --- Exercises Section --- */
+.exercises-section {
+    padding: 120px 0;
+    background: var(--gray-50);
+}
+
+.exercises-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.exercise-card {
+    background: var(--card-bg);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform var(--transition), box-shadow var(--transition);
+    cursor: pointer;
+}
+
+.exercise-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-xl);
+}
+
+.exercise-card:hover .exercise-play-btn {
+    opacity: 0;
+}
+
+.exercise-card:hover .exercise-video {
+    opacity: 1;
+}
+
+.exercise-video-wrapper {
+    position: relative;
+    aspect-ratio: 9 / 14;
+    overflow: hidden;
+    background: var(--gray-900);
+}
+
+.exercise-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.exercise-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    background: rgba(37, 99, 235, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity var(--transition);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.exercise-card h4 {
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gray-900);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .exercises-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .exercise-card h4 {
+        font-size: 14px;
+        padding: 12px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .exercises-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
